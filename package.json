@@ -1,0 +1,23 @@
+{
+  "name": "streaming-legal-matter-intake",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/legal_intake_server.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test test/matter_intake.test.ts"
+  },
+  "dependencies": {
+    "openai": "^5.20.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
